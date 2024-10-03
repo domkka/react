@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
 @import "./NavBar.css";
+@import "./Home.css";
 
 * {
     font-family: "Work Sans";
     font-weight: 460;
     background-color: rgb(43, 35, 61);
-}
-
-.test-class{
-    font-size: 60px;
-    color: blueviolet;
-    display: flex;
-    font-weight: 650;
-    justify-content: center;
-    text-shadow:5px 5px 10px rgb(33, 2, 46);
 }
