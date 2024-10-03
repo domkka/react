@@ -1,36 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+@import "./NavBar.css";
 
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    overflow: hidden;
-}
-
-.navbar h1 {
-    color: rgb(255, 0, 0);
-    font-size: 40px;
-    padding-left: 30px;
-}
-
-.button-group {
-    display: flex;
-    gap: 10px;
-    padding-right: 30px;
-}
-
-.nav-button{
-    display: flex;
-    background: green;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
+* {
+    font-family: "Work Sans";
+    font-weight: 460;
+    background-color: rgb(43, 35, 61);
 }
 
 .test-class{
-    background-color: aqua;
+    font-size: 60px;
+    color: blueviolet;
+    display: flex;
+    font-weight: 650;
+    justify-content: center;
+    text-shadow:5px 5px 10px rgb(33, 2, 46);
 }

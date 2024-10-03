@@ -1,12 +1,15 @@
 function NavBar() {
   return (
     <div className="navbar">
-      <h1>NavBar</h1>
-      <div className="button-group">
-        <button className="nav-button" onClick={() => console.log("Hallo")}>
-          Klick mich
-        </button>
-        <button className="nav-button">Klick mich</button>
+      <h1>Dom</h1>
+      <div className="links">
+        <a href="/">Home</a>
+        <a href="http://www.google.com" target="_blank">
+          Google
+        </a>
+        <a href="https://github.com/domkka" target="_blank">
+          Github
+        </a>
       </div>
     </div>
   );
