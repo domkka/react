@@ -1,10 +1,15 @@
 import { useState } from "react";
+import List from "./List";
+
+interface Blog {
+  id: number;
+  title: string;
+  body: string;
+  author: string;
+}
 
 function Home() {
-  const [name, setName] = useState("dom");
-  const [age, setAge] = useState(22);
-
-  const [blogs, setBlogs] = useState([
+  const [blogs, setBlogs] = useState<Blog[]>([
     { title: "My new website", body: "lorem ipsum...", author: "mario", id: 1 },
     { title: "Welcome party!", body: "lorem ipsum...", author: "yoshi", id: 2 },
     {
@@ -15,19 +20,13 @@ function Home() {
     },
   ]);
 
-  const handleClick = () => {
-    setName("nicht mehr dom");
-    setAge(age + 1);
-  };
-
   return (
     <div className="homescreen">
-      {blogs.map((blog) => (
-        <div className="blog-preview" key={blog.id}>
-          <h2>{blog.title}</h2>
-          <p>Written by {blog.author}</p>
-        </div>
-      ))}
+      <List blogs={blogs} title="All Blogs" />
+      <List
+        blogs={blogs.filter((blog) => blog.author === "mario")}
+        title="Marios Blogs"
+      />
     </div>
   );
 }
