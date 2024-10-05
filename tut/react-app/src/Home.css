@@ -9,6 +9,7 @@
     grid-column: 2 / 4;
     margin-bottom: 5px;
     text-decoration: none;
+    z-index: 0;
 }
 
 
@@ -25,6 +26,10 @@
     text-shadow:5px 5px 10px rgb(33, 2, 46);
 }
 
+.blog-preview button{
+    background-color: white;
+    z-index: 10;
+}
 
 .blog-preview p {
     font-size: 25px;
