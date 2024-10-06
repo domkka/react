@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface Blog {
   id: number;
   title: string;
@@ -17,15 +19,10 @@ function List(props: ListProps) {
     <>
       <h1 id="list-title">{listtitle}</h1>
       {blogs.map((blog) => (
-        <a
-          className="blog-preview"
-          key={blog.id}
-          href="https://www.google.com/"
-          target="_blank"
-        >
+        <Link className="blog-preview" key={blog.id} to={`/blogs/${blog.id}`}>
           <h2>{blog.title}</h2>
           <p>Written by {blog.author}</p>
-        </a>
+        </Link>
       ))}
     </>
   );
