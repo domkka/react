@@ -1,16 +1,22 @@
 {
-  "blogs":[
+  "blogs": [
     {
-      "title":"My First Blog",
-      "body":"Why do we use it?\nIt is a long established fact that a reader will be distracted ",
-      "author":"mario",
-      "id":1
+      "id": "1",
+      "title": "My First Blog",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted ",
+      "author": "mario"
     },
     {
-      "title":"Opening Party",
-      "body":"Why do we use it?\nIt is a long established fact that a reader will be distracted ",
-      "author":"yoshi",
-      "id":2
+      "id": "2",
+      "title": "Opening Party",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted ",
+      "author": "yoshi"
+    },
+    {
+      "id": "4",
+      "title": "aiugsdguzisa",
+      "body": "asugzidzugasdgzuasgzduia",
+      "author": "yoshi"
     }
   ]
 }

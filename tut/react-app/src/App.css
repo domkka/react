@@ -1,9 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
 @import "./NavBar.css";
 @import "./Home.css";
+@import "./Footer.css";
+@import "./Create.css";
 
 * {
     font-family: "Work Sans";
     font-weight: 460;
-    background-color: rgb(170, 148, 221);
+    background-color: rgb(63, 63, 63);
+}
+
+.app-container{
+    min-height: 100vh;
+}
+
+.content{
+    min-height: 79vh;
+}
+
+.blog-details{
+    display:grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: auto;
+    color:white;
+}
+
+.blog-details-content{
+    grid-column: 2 / 5;
 }
